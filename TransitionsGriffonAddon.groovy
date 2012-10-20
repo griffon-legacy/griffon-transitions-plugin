@@ -21,7 +21,7 @@ import groovy.swing.factory.LayoutFactory
  * @author Andres Almiray
  */
 class TransitionsGriffonAddon {
-    def factories = [
+    Map factories = [
         transitionLayout: new LayoutFactory(TransitionLayout)
     ]
 }

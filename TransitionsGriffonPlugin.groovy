@@ -1,5 +1,5 @@
 /*
- * Copyright 2009-2010 the original author or authors.
+ * Copyright 2009-2012 the original author or authors.
  *
  * Licensed under the Apache License, Version 2.0 (the 'License');
  * you may not use this file except in compliance with the License.
@@ -19,11 +19,11 @@
  */
 class TransitionsGriffonPlugin {
     // the plugin version
-    String version = '0.6'
+    String version = '1.0.0'
     // the version or versions of Griffon the plugin is designed for
-    String griffonVersion = '0.9.5 > *'
+    String griffonVersion = '1.0.0 > *'
     // the other plugins this plugin depends on
-    Map dependsOn = [swing: '0.9.5', 'trident-builder': '0.8']
+    Map dependsOn = ['trident-builder': '1.0.0']
     // resources that are included in plugin packaging
     List pluginIncludes = []
     // the plugin license
@@ -89,7 +89,6 @@ The following methods can be used with `TransitionLayout`:
  *  **int cardIndexOf(String name)**
  *  **String getCurrentCardName(Container c)**
  *  **int getCurrentCardIndex(Container c)**
-
 
 TransitionLayout will mirror a transition when navigating a page in reverse. Suppose that `top` is showing page1, if a call to `previous()` is
 issued then a reverse transition (from: being page0 and to: being page1) using page0's `transition` will be called. You can change this feature
